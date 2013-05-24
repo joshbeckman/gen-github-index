@@ -22,11 +22,18 @@
           padding-bottom: 2em;
         }
         footer{
+          padding-top: 2em;
           font-size: 0.8em;
+        }
+        form{
+          padding-bottom: 1em;
         }
         input{
           border: none;
           border-bottom: 1px solid #bbb;
+        }
+        input[type="submit"]{
+          cursor: pointer;
         }
         .dlButton{
           border: none;
@@ -37,7 +44,7 @@
         h1{
           font-size: 1.5em;
           margin: 0;
-          padding: 0;
+          padding-bottom: 2em;
           padding-top: 2em;
         }
         h1 a{
@@ -253,16 +260,34 @@
     <body>
 
         <header>
-            <h1>Download your own Github Index.html</h1>
+            <h1>Download your own Github index.html</h1>
         </header>
 
         <form action="./" method="post">
-            <input type="text" placeholder="Github username"></input>
-            <input type="submit" value="Download" class="dlButton" id="download">
+            <input type="text" placeholder="Your Github username" style="width:20em;"></input>
+            <input type="submit" value="Download index.html" class="dlButton" id="download">
         </form>
 
+        <p>
+          Show your open-source work and keep a quick glance of your starred repos.
+          <br>
+          Show which languages you work with and which repos you fork.
+          <br>
+          Show it with style.
+          <br>
+          All in one file. Upload it anywhere.
+        </p>
+        <p>What will it look like?</p>
+        <ul style="list-style:square;">
+          <li><a href="http://bckmn.com/code">j-beckman</a></li>
+          <li><a href="http://cheeaun.github.io/">cheeaun</a> <small>(inspiration)</small></li>
+        </ul>
+        <blockquote>
+          <a href="https://github.com/j-beckman/gen-github-index/issues/new">Submit a link</a> to your own Github index
+        </blockquote>
+
         <footer>
-            <p>Made by <a href="http://bckmn.com/code">j-beckman</a> with love.</p>
+            <p>Made by <a href="http://bckmn.com/code">j-beckman</a> for <a href="http://pay.bckmn.com">love</a></p>
         </footer>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
